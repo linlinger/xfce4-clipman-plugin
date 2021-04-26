@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
+<!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.14"/>
   <requires lib="libxfce4ui-2" version="4.12"/>
@@ -7,51 +7,51 @@
     <property name="lower">5</property>
     <property name="upper">1000</property>
     <property name="value">5</property>
-    <property name="step_increment">5</property>
-    <property name="page_increment">10</property>
+    <property name="step-increment">5</property>
+    <property name="page-increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adjustment2">
     <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
+    <property name="step-increment">1</property>
+    <property name="page-increment">10</property>
   </object>
   <object class="GtkImage" id="image5">
     <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="icon_name">help-browser</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">help-browser</property>
   </object>
   <object class="GtkImage" id="image6">
     <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="icon_name">window-close-symbolic</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">window-close-symbolic</property>
   </object>
   <object class="XfceTitledDialog" id="settings-dialog">
-    <property name="can_focus">False</property>
-    <property name="title" translatable="yes">Clipman Settings</property>
-    <property name="window_position">center</property>
-    <property name="default_width">340</property>
-    <property name="default_height">390</property>
-    <property name="destroy_with_parent">True</property>
-    <property name="icon_name">xfce4-clipman-plugin</property>
-    <property name="type_hint">dialog</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">剪贴板管理器设置</property>
+    <property name="window-position">center</property>
+    <property name="default-width">340</property>
+    <property name="default-height">390</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="icon-name">xfce4-clipman-plugin</property>
+    <property name="type-hint">dialog</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="settings-dialog-vbox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="settings-dialog-actionarea">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkButton" id="settings-dialog-button-help">
                 <property name="label" translatable="yes">_Help</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="image">image5</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -64,10 +64,10 @@
               <object class="GtkButton" id="settings-dialog-button-close">
                 <property name="label" translatable="yes">_Close</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="image">image6</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -85,43 +85,43 @@
         <child>
           <object class="GtkNotebook" id="settings-dialog-notebook">
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="border_width">6</property>
+            <property name="can-focus">True</property>
+            <property name="border-width">6</property>
             <child>
               <object class="GtkBox" id="vbox-general">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="border_width">12</property>
+                <property name="can-focus">False</property>
+                <property name="border-width">12</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">18</property>
                 <child>
                   <object class="GtkFrame" id="frame-behavior">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label_xalign">0</property>
-                    <property name="shadow_type">none</property>
+                    <property name="can-focus">False</property>
+                    <property name="label-xalign">0</property>
+                    <property name="shadow-type">none</property>
                     <child>
                       <object class="GtkAlignment" id="alignment-behavior">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="top_padding">6</property>
-                        <property name="left_padding">12</property>
+                        <property name="can-focus">False</property>
+                        <property name="top-padding">6</property>
+                        <property name="left-padding">12</property>
                         <child>
                           <object class="GtkBox" id="vbox-behavior">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkCheckButton" id="add-selections">
                                 <property name="label" translatable="yes">Sync mouse _selections</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="has_tooltip">True</property>
-                                <property name="tooltip_text" translatable="yes">If checked, the selections will be synced with the default clipboard in a way that you can paste what you select</property>
-                                <property name="use_underline">True</property>
-                                <property name="draw_indicator">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="has-tooltip">True</property>
+                                <property name="tooltip-text" translatable="yes">If checked, the selections will be synced with the default clipboard in a way that you can paste what you select</property>
+                                <property name="use-underline">True</property>
+                                <property name="draw-indicator">True</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -133,12 +133,12 @@
                               <object class="GtkCheckButton" id="show-qr-code">
                                 <property name="label" translatable="yes">_QR-Code support</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="has_tooltip">True</property>
-                                <property name="tooltip_text" translatable="yes">If checked, the menu shows a QR-Code of the currently selected clipboard entry</property>
-                                <property name="use_underline">True</property>
-                                <property name="draw_indicator">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="has-tooltip">True</property>
+                                <property name="tooltip-text" translatable="yes">If checked, the menu shows a QR-Code of the currently selected clipboard entry</property>
+                                <property name="use-underline">True</property>
+                                <property name="draw-indicator">True</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -149,16 +149,16 @@
                             <child>
                               <object class="GtkBox" id="hbox1">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="tooltip_text" translatable="yes">Automatically paste a selected item from the history</property>
+                                <property name="can-focus">False</property>
+                                <property name="tooltip-text" translatable="yes">Automatically paste a selected item from the history</property>
                                 <property name="spacing">4</property>
                                 <child>
                                   <object class="GtkLabel" id="label-paste-on-activate">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">_Paste instantly:</property>
-                                    <property name="use_underline">True</property>
-                                    <property name="mnemonic_widget">combobox-paste-on-activate</property>
+                                    <property name="use-underline">True</property>
+                                    <property name="mnemonic-widget">combobox-paste-on-activate</property>
                                     <property name="xalign">0</property>
                                   </object>
                                   <packing>
@@ -170,7 +170,7 @@
                                 <child>
                                   <object class="GtkComboBoxText" id="combobox-paste-on-activate">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                   </object>
                                   <packing>
                                     <property name="expand">True</property>
@@ -192,9 +192,9 @@
                     <child type="label">
                       <object class="GtkLabel" id="label-general">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">&lt;b&gt;General&lt;/b&gt;</property>
-                        <property name="use_markup">True</property>
+                        <property name="use-markup">True</property>
                       </object>
                     </child>
                   </object>
@@ -207,30 +207,30 @@
                 <child>
                   <object class="GtkFrame" id="frame-history">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label_xalign">0</property>
-                    <property name="shadow_type">none</property>
+                    <property name="can-focus">False</property>
+                    <property name="label-xalign">0</property>
+                    <property name="shadow-type">none</property>
                     <child>
                       <object class="GtkAlignment" id="alignment-history">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="top_padding">6</property>
-                        <property name="left_padding">12</property>
+                        <property name="can-focus">False</property>
+                        <property name="top-padding">6</property>
+                        <property name="left-padding">12</property>
                         <child>
                           <object class="GtkBox" id="vbox-history">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkCheckButton" id="popup-at-pointer">
                                 <property name="label" translatable="yes">P_osition menu at mouse pointer</property>
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="tooltip_text" translatable="yes">Popup the menu at the mouse pointer position, only for the xfce4-popup-clipman command</property>
-                                <property name="use_underline">True</property>
-                                <property name="draw_indicator">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">False</property>
+                                <property name="tooltip-text" translatable="yes">Popup the menu at the mouse pointer position, only for the xfce4-popup-clipman command</property>
+                                <property name="use-underline">True</property>
+                                <property name="draw-indicator">True</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -241,11 +241,11 @@
                             <child>
                               <object class="GtkBox">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <child>
                                   <object class="GtkLabel">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">Maximum items:</property>
                                     <property name="xalign">0</property>
                                   </object>
@@ -258,13 +258,13 @@
                                 <child>
                                   <object class="GtkSpinButton" id="max-menu-items">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
+                                    <property name="can-focus">True</property>
                                     <property name="adjustment">adjustment2</property>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
                                     <property name="fill">True</property>
-                                    <property name="pack_type">end</property>
+                                    <property name="pack-type">end</property>
                                     <property name="position">1</property>
                                   </packing>
                                 </child>
@@ -282,9 +282,9 @@
                     <child type="label">
                       <object class="GtkLabel" id="label-menu">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">&lt;b&gt;Menu&lt;/b&gt;</property>
-                        <property name="use_markup">True</property>
+                        <property name="use-markup">True</property>
                       </object>
                     </child>
                   </object>
@@ -299,32 +299,32 @@
             <child type="tab">
               <object class="GtkLabel" id="label-behavior">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">_Behavior</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
-                <property name="tab_fill">False</property>
+                <property name="tab-fill">False</property>
               </packing>
             </child>
             <child>
               <object class="GtkBox" id="vbox-actions">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="border_width">12</property>
+                <property name="can-focus">False</property>
+                <property name="border-width">12</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkBox" id="box1">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">&lt;b&gt;_Enable automatic actions&lt;/b&gt;</property>
-                        <property name="use_markup">True</property>
-                        <property name="use_underline">True</property>
+                        <property name="use-markup">True</property>
+                        <property name="use-underline">True</property>
                         <property name="xalign">0</property>
                       </object>
                       <packing>
@@ -336,8 +336,8 @@
                     <child>
                       <object class="GtkSwitch" id="enable-actions">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="tooltip_text" translatable="yes">If checked, the clipboard texts will be matched against regular expressions and a menu will display possible actions automatically.
+                        <property name="can-focus">True</property>
+                        <property name="tooltip-text" translatable="yes">If checked, the clipboard texts will be matched against regular expressions and a menu will display possible actions automatically.
 Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (and a match was found)</property>
                       </object>
                       <packing>
@@ -356,18 +356,18 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                 <child>
                   <object class="GtkBox" id="box-actions">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_left">12</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">12</property>
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkRadioButton" id="skip-action-1">
                         <property name="label" translatable="yes">_Show actions by holding Control</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">When the selection is done (mouse or keyboard) and the Control key is still pressed down, the popup menu for matched actions will be shown</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="tooltip-text" translatable="yes">When the selection is done (mouse or keyboard) and the Control key is still pressed down, the popup menu for matched actions will be shown</property>
+                        <property name="use-underline">True</property>
+                        <property name="draw-indicator">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -379,12 +379,12 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                       <object class="GtkRadioButton" id="skip-action-2">
                         <property name="label" translatable="yes">S_kip actions by holding Control</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">When the selection is done (mouse or keyboard) and the Control key is still pressed down, the popup menu for matched actions will be skipped</property>
-                        <property name="use_underline">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="tooltip-text" translatable="yes">When the selection is done (mouse or keyboard) and the Control key is still pressed down, the popup menu for matched actions will be skipped</property>
+                        <property name="use-underline">True</property>
                         <property name="active">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="draw-indicator">True</property>
                         <property name="group">skip-action-1</property>
                       </object>
                       <packing>
@@ -396,20 +396,20 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                     <child>
                       <object class="GtkBox" id="hbox2">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_top">12</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-top">12</property>
                         <property name="spacing">6</property>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow1">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="shadow_type">in</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
                             <child>
                               <object class="GtkTreeView" id="actions">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="headers_visible">False</property>
-                                <property name="rules_hint">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="headers-visible">False</property>
+                                <property name="rules-hint">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection" id="treeview-selection1"/>
                                 </child>
@@ -425,20 +425,20 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                         <child>
                           <object class="GtkBox" id="vbox4">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkButton" id="button-add-action">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Add action</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Add action</property>
                                 <child>
                                   <object class="GtkImage" id="image1">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">list-add-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">list-add-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -453,14 +453,14 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                               <object class="GtkButton" id="button-edit-action">
                                 <property name="visible">True</property>
                                 <property name="sensitive">False</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Edit action</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Edit action</property>
                                 <child>
                                   <object class="GtkImage" id="image2">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">document-edit-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">document-edit-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -475,14 +475,14 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                               <object class="GtkButton" id="button-delete-action">
                                 <property name="visible">True</property>
                                 <property name="sensitive">False</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Delete action</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Delete action</property>
                                 <child>
                                   <object class="GtkImage" id="image3">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">edit-delete-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">edit-delete-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -496,14 +496,14 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                             <child>
                               <object class="GtkButton" id="button-reset-actions">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
-                                <property name="tooltip_text" translatable="yes">Reset all actions to the system default values</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Reset all actions to the system default values</property>
                                 <child>
                                   <object class="GtkImage" id="image4">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">edit-clear-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">edit-clear-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -511,7 +511,7 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
-                                <property name="pack_type">end</property>
+                                <property name="pack-type">end</property>
                                 <property name="position">3</property>
                               </packing>
                             </child>
@@ -544,32 +544,32 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
             <child type="tab">
               <object class="GtkLabel" id="label-actions">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">_Actions</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="position">1</property>
-                <property name="tab_fill">False</property>
+                <property name="tab-fill">False</property>
               </packing>
             </child>
             <child>
               <object class="GtkBox" id="vbox-tweaks">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="border_width">12</property>
+                <property name="can-focus">False</property>
+                <property name="border-width">12</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkLabel">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">&lt;b&gt;Remember history&lt;/b&gt;</property>
-                        <property name="use_markup">True</property>
+                        <property name="use-markup">True</property>
                         <property name="xalign">0</property>
                       </object>
                       <packing>
@@ -581,7 +581,7 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                     <child>
                       <object class="GtkSwitch" id="save-on-quit">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
+                        <property name="can-focus">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -599,19 +599,19 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_left">12</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">12</property>
                     <property name="orientation">vertical</property>
                     <property name="spacing">6</property>
                     <child>
                       <object class="GtkCheckButton" id="store-an-image">
                         <property name="label" translatable="yes">Remember last copied _image</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">If checked, this option allows one to store one image inside the history</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="tooltip-text" translatable="yes">If checked, this option allows one to store one image inside the history</property>
+                        <property name="use-underline">True</property>
+                        <property name="draw-indicator">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -623,11 +623,11 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                       <object class="GtkCheckButton" id="reorder-items">
                         <property name="label" translatable="yes">_Reorder history items</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">Push last copied text to the top of the history, useful to reorder old items</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="tooltip-text" translatable="yes">Push last copied text to the top of the history, useful to reorder old items</property>
+                        <property name="use-underline">True</property>
+                        <property name="draw-indicator">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -639,11 +639,11 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                       <object class="GtkCheckButton" id="reverse-order">
                         <property name="label" translatable="yes">Re_verse history order</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="tooltip_text" translatable="yes">Reverse order of the history shown in the menu</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="tooltip-text" translatable="yes">Reverse order of the history shown in the menu</property>
+                        <property name="use-underline">True</property>
+                        <property name="draw-indicator">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -655,12 +655,12 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                       <object class="GtkCheckButton" id="history-ignore-selections">
                         <property name="label" translatable="yes">Ignore mouse s_elections</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_text" translatable="yes">If checked, the selections won't affect the history except the manual copies</property>
-                        <property name="use_underline">True</property>
-                        <property name="draw_indicator">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="has-tooltip">True</property>
+                        <property name="tooltip-text" translatable="yes">If checked, the selections won't affect the history except the manual copies</property>
+                        <property name="use-underline">True</property>
+                        <property name="draw-indicator">True</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -671,15 +671,15 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                     <child>
                       <object class="GtkBox" id="hbox-history-size">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="spacing">4</property>
                         <child>
                           <object class="GtkLabel" id="label-history-size">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="label" translatable="yes">Size of the _history:</property>
-                            <property name="use_underline">True</property>
-                            <property name="mnemonic_widget">max-texts-in-history</property>
+                            <property name="use-underline">True</property>
+                            <property name="mnemonic-widget">max-texts-in-history</property>
                             <property name="xalign">0</property>
                           </object>
                           <packing>
@@ -691,8 +691,8 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                         <child>
                           <object class="GtkSpinButton" id="max-texts-in-history">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="invisible_char">•</property>
+                            <property name="can-focus">True</property>
+                            <property name="invisible-char">•</property>
                             <property name="text" translatable="yes">5</property>
                             <property name="adjustment">adjustment1</property>
                             <property name="value">100</property>
@@ -700,7 +700,7 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">True</property>
-                            <property name="pack_type">end</property>
+                            <property name="pack-type">end</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -726,13 +726,13 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
             <child type="tab">
               <object class="GtkLabel" id="label-histor">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">H_istory</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="position">2</property>
-                <property name="tab_fill">False</property>
+                <property name="tab-fill">False</property>
               </packing>
             </child>
           </object>
@@ -750,38 +750,35 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
     </action-widgets>
   </object>
   <object class="GtkDialog" id="action-dialog">
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="title" translatable="yes">Edit Action</property>
     <property name="modal">True</property>
-    <property name="window_position">center-on-parent</property>
-    <property name="default_width">400</property>
-    <property name="default_height">440</property>
-    <property name="destroy_with_parent">True</property>
-    <property name="icon_name">system-run</property>
-    <property name="type_hint">dialog</property>
-    <property name="skip_taskbar_hint">True</property>
-    <property name="transient_for">settings-dialog</property>
-    <child>
-      <placeholder/>
-    </child>
+    <property name="window-position">center-on-parent</property>
+    <property name="default-width">400</property>
+    <property name="default-height">440</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="icon-name">system-run</property>
+    <property name="type-hint">dialog</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="transient-for">settings-dialog</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="action-dialog-vbox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">6</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="action-dialog-actionarea">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="layout_style">end</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="action-dialog-button-cancel">
                 <property name="label">_Cancel</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -793,9 +790,9 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
               <object class="GtkButton" id="action-dialog-button-ok">
                 <property name="label">_OK</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -807,110 +804,120 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="pack_type">end</property>
+            <property name="pack-type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="border_width">6</property>
+            <property name="can-focus">False</property>
+            <property name="border-width">6</property>
             <property name="orientation">vertical</property>
             <property name="spacing">18</property>
             <child>
               <object class="GtkFrame" id="frame-action">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label_xalign">0</property>
-                <property name="shadow_type">none</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <property name="shadow-type">none</property>
                 <child>
                   <object class="GtkAlignment" id="alignment-action">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="top_padding">6</property>
-                    <property name="left_padding">12</property>
+                    <property name="can-focus">False</property>
+                    <property name="top-padding">6</property>
+                    <property name="left-padding">12</property>
                     <child>
                       <object class="GtkBox" id="box2">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">6</property>
                         <child>
+                          <!-- n-columns=3 n-rows=3 -->
                           <object class="GtkGrid" id="grid1">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="row_spacing">6</property>
-                            <property name="column_spacing">12</property>
-                            <property name="row_homogeneous">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="row-spacing">6</property>
+                            <property name="column-spacing">12</property>
+                            <property name="row-homogeneous">True</property>
                             <child>
                               <object class="GtkEntry" id="action-name">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
+                                <property name="can-focus">True</property>
                                 <property name="hexpand">True</property>
-                                <property name="invisible_char">•</property>
+                                <property name="invisible-char">•</property>
                               </object>
                               <packing>
-                                <property name="left_attach">1</property>
-                                <property name="top_attach">0</property>
+                                <property name="left-attach">1</property>
+                                <property name="top-attach">0</property>
                                 <property name="width">2</property>
                               </packing>
                             </child>
                             <child>
                               <object class="GtkLabel" id="label-action-name">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <property name="label" translatable="yes">Name:</property>
                                 <property name="xalign">0</property>
                               </object>
                               <packing>
-                                <property name="left_attach">0</property>
-                                <property name="top_attach">0</property>
+                                <property name="left-attach">0</property>
+                                <property name="top-attach">0</property>
                               </packing>
                             </child>
                             <child>
                               <object class="GtkLabel" id="label-action-pattern">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <property name="label" translatable="yes">Pattern:</property>
                                 <property name="xalign">0</property>
                               </object>
                               <packing>
-                                <property name="left_attach">0</property>
-                                <property name="top_attach">1</property>
+                                <property name="left-attach">0</property>
+                                <property name="top-attach">1</property>
                               </packing>
                             </child>
                             <child>
                               <object class="GtkEntry" id="regex">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
+                                <property name="can-focus">True</property>
                                 <property name="hexpand">True</property>
-                                <property name="invisible_char">•</property>
+                                <property name="invisible-char">•</property>
                               </object>
                               <packing>
-                                <property name="left_attach">1</property>
-                                <property name="top_attach">1</property>
+                                <property name="left-attach">1</property>
+                                <property name="top-attach">1</property>
                               </packing>
                             </child>
                             <child>
                               <object class="GtkButton" id="button-action-pattern">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
                                 <property name="halign">center</property>
                                 <child>
                                   <object class="GtkImage" id="image-action-pattern">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">document-edit-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">document-edit-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
                               </object>
                               <packing>
-                                <property name="left_attach">2</property>
-                                <property name="top_attach">1</property>
+                                <property name="left-attach">2</property>
+                                <property name="top-attach">1</property>
                               </packing>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
                             </child>
                           </object>
                           <packing>
@@ -921,13 +928,13 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                         </child>
                         <child>
                           <object class="GtkInfoBar" id="regex-infobar">
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="revealed">False</property>
                             <child internal-child="action_area">
                               <object class="GtkButtonBox">
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <property name="spacing">6</property>
-                                <property name="layout_style">end</property>
+                                <property name="layout-style">end</property>
                                 <child>
                                   <placeholder/>
                                 </child>
@@ -940,13 +947,13 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                             </child>
                             <child internal-child="content_area">
                               <object class="GtkBox">
-                                <property name="can_focus">False</property>
+                                <property name="can-focus">False</property>
                                 <property name="spacing">16</property>
                                 <child>
                                   <object class="GtkImage">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">dialog-information-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">dialog-information-symbolic</property>
                                     <property name="icon_size">3</property>
                                   </object>
                                   <packing>
@@ -958,7 +965,7 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                                 <child>
                                   <object class="GtkLabel" id="label-regex-info">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">You can use the substitution parameters "\1", "\2" and so on in the commands. The parameter "\0" represents the complete text. The pattern is always anchored within the special characters ^$</property>
                                     <property name="wrap">True</property>
                                     <property name="xalign">0</property>
@@ -987,11 +994,11 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                           <object class="GtkCheckButton" id="manual">
                             <property name="label" translatable="yes">Activate only on manual copy</property>
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="has_tooltip">True</property>
-                            <property name="tooltip_text" translatable="yes">By default the action is triggered by a selection, check this option to trigger the action only when you make a manual copy</property>
-                            <property name="draw_indicator">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">False</property>
+                            <property name="has-tooltip">True</property>
+                            <property name="tooltip-text" translatable="yes">By default the action is triggered by a selection, check this option to trigger the action only when you make a manual copy</property>
+                            <property name="draw-indicator">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1006,9 +1013,9 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                 <child type="label">
                   <object class="GtkLabel" id="label-action">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">&lt;b&gt;Action&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="use-markup">True</property>
                   </object>
                 </child>
               </object>
@@ -1021,80 +1028,96 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
             <child>
               <object class="GtkFrame" id="frame-commands">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label_xalign">0</property>
-                <property name="shadow_type">none</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <property name="shadow-type">none</property>
                 <child>
                   <object class="GtkAlignment" id="alignment-commands">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="top_padding">6</property>
-                    <property name="left_padding">12</property>
+                    <property name="can-focus">False</property>
+                    <property name="top-padding">6</property>
+                    <property name="left-padding">12</property>
                     <child>
                       <object class="GtkBox" id="hbox-commands">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="spacing">6</property>
                         <child>
                           <object class="GtkBox" id="vbox-commands">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
+                              <!-- n-columns=3 n-rows=3 -->
                               <object class="GtkGrid" id="grid2">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="row_spacing">6</property>
-                                <property name="column_spacing">6</property>
-                                <property name="row_homogeneous">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="row-spacing">6</property>
+                                <property name="column-spacing">6</property>
+                                <property name="row-homogeneous">True</property>
                                 <child>
                                   <object class="GtkEntry" id="command-name">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
+                                    <property name="can-focus">True</property>
                                     <property name="hexpand">True</property>
-                                    <property name="invisible_char">•</property>
+                                    <property name="invisible-char">•</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">0</property>
+                                    <property name="left-attach">1</property>
+                                    <property name="top-attach">0</property>
                                   </packing>
                                 </child>
                                 <child>
                                   <object class="GtkEntry" id="command">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
+                                    <property name="can-focus">True</property>
                                     <property name="hexpand">True</property>
-                                    <property name="invisible_char">•</property>
+                                    <property name="invisible-char">•</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">1</property>
+                                    <property name="left-attach">1</property>
+                                    <property name="top-attach">1</property>
                                   </packing>
                                 </child>
                                 <child>
                                   <object class="GtkLabel" id="label-command">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">Command:</property>
                                     <property name="xalign">0</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">1</property>
+                                    <property name="left-attach">0</property>
+                                    <property name="top-attach">1</property>
                                   </packing>
                                 </child>
                                 <child>
                                   <object class="GtkLabel" id="label-command-name">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
+                                    <property name="can-focus">False</property>
                                     <property name="label" translatable="yes">Name:</property>
                                     <property name="xalign">0</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">0</property>
+                                    <property name="left-attach">0</property>
+                                    <property name="top-attach">0</property>
                                   </packing>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
                                 </child>
                               </object>
                               <packing>
@@ -1106,15 +1129,15 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                             <child>
                               <object class="GtkScrolledWindow" id="scrolledwindow-commands">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="shadow_type">in</property>
+                                <property name="can-focus">True</property>
+                                <property name="shadow-type">in</property>
                                 <child>
                                   <object class="GtkTreeView" id="commands">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
+                                    <property name="can-focus">True</property>
                                     <property name="hexpand">True</property>
-                                    <property name="headers_visible">False</property>
-                                    <property name="rules_hint">True</property>
+                                    <property name="headers-visible">False</property>
+                                    <property name="rules-hint">True</property>
                                     <child internal-child="selection">
                                       <object class="GtkTreeSelection"/>
                                     </child>
@@ -1137,19 +1160,19 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                         <child>
                           <object class="GtkBox" id="vbox-command-buttons">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
+                            <property name="can-focus">False</property>
                             <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkButton" id="button-add-command">
                                 <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
                                 <child>
                                   <object class="GtkImage" id="image-add-command">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">list-add-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">list-add-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -1164,13 +1187,13 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                               <object class="GtkButton" id="button-refresh-command">
                                 <property name="visible">True</property>
                                 <property name="sensitive">False</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
                                 <child>
                                   <object class="GtkImage" id="image-refresh-command">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">document-save-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">document-save-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -1185,13 +1208,13 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                               <object class="GtkButton" id="button-delete-command">
                                 <property name="visible">True</property>
                                 <property name="sensitive">False</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
                                 <child>
                                   <object class="GtkImage" id="image-delete-command">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="icon_name">edit-delete-symbolic</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="icon-name">edit-delete-symbolic</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                 </child>
@@ -1216,9 +1239,9 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
                 <child type="label">
                   <object class="GtkLabel" id="label-commands">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">&lt;b&gt;Commands&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="use-markup">True</property>
                   </object>
                 </child>
               </object>
@@ -1246,37 +1269,34 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
     <property name="text" translatable="yes">Type here your custom text, for example a URL, a filename, etc.</property>
   </object>
   <object class="GtkDialog" id="regex-dialog">
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="title" translatable="yes">Regular expression</property>
     <property name="modal">True</property>
-    <property name="default_width">260</property>
-    <property name="default_height">260</property>
-    <property name="destroy_with_parent">True</property>
-    <property name="icon_name">gtk-edit</property>
-    <property name="type_hint">dialog</property>
-    <property name="skip_taskbar_hint">True</property>
-    <property name="transient_for">action-dialog</property>
-    <child>
-      <placeholder/>
-    </child>
+    <property name="default-width">260</property>
+    <property name="default-height">260</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="icon-name">gtk-edit</property>
+    <property name="type-hint">dialog</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="transient-for">action-dialog</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="regex-dialog-vbox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="regex-dialog-actionarea">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="layout_style">end</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="regex-dialog-button-cancel">
                 <property name="label">_Cancel</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1288,9 +1308,9 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
               <object class="GtkButton" id="regex-dialog-button-ok">
                 <property name="label">_OK</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1302,23 +1322,23 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="pack_type">end</property>
+            <property name="pack-type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="border_width">6</property>
+            <property name="can-focus">False</property>
+            <property name="border-width">6</property>
             <property name="orientation">vertical</property>
             <property name="spacing">6</property>
             <child>
               <object class="GtkEntry" id="regex-entry">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="invisible_char">•</property>
-                <property name="secondary_icon_stock">gtk-apply</property>
+                <property name="can-focus">True</property>
+                <property name="invisible-char">•</property>
+                <property name="secondary-icon-stock">gtk-apply</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1329,20 +1349,20 @@ Otherwise the menu will only appear when calling "xfce4-popup-clipman-actions" (
             <child>
               <object class="GtkScrolledWindow">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="shadow_type">in</property>
+                <property name="can-focus">True</property>
+                <property name="shadow-type">in</property>
                 <child>
                   <object class="GtkViewport">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkTextView" id="regex-textview">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="pixels_above_lines">2</property>
-                        <property name="pixels_below_lines">2</property>
-                        <property name="pixels_inside_wrap">4</property>
-                        <property name="wrap_mode">word</property>
+                        <property name="can-focus">True</property>
+                        <property name="pixels-above-lines">2</property>
+                        <property name="pixels-below-lines">2</property>
+                        <property name="pixels-inside-wrap">4</property>
+                        <property name="wrap-mode">word</property>
                         <property name="buffer">textbuffer1</property>
                       </object>
                     </child>
