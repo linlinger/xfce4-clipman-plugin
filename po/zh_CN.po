@@ -135,7 +135,7 @@ msgstr "如果选中，选择区会以一种您能粘贴您所选内容的方式
 
 #: ../panel-plugin/settings-dialog.ui.h:6
 msgid "_QR-Code support"
-msgstr "QR 码支持(_Q)"
+msgstr "二维码支持(_Q)"
 
 #: ../panel-plugin/settings-dialog.ui.h:7
 msgid ""
